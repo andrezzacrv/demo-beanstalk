@@ -11,7 +11,7 @@ public class DemoApplication {
 
 	@RequestMapping("/")
 	String home() {
-		return "Hello World - BeanStalk!";	
+		return "Hello World - Elastic BeanStalk!";	
 	}
 
 	public static void main(String[] args) {
