@@ -3,3 +3,14 @@ os: linux
 files:
   - source: ./demo-0.0.1-SNAPSHOT.jar
     destination: /tmp
+hooks:
+  BeforeInstall:
+    - location: startApp
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: stopApp
+      timeout: 300
+      runas: root
+
+    
